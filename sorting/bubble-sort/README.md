@@ -3,8 +3,6 @@ Bubble sort works by repeatedly comparing and swapping adjacent elements in pair
 
 It is called bubble sort because the largest numbers "bubble up" to the end of the array, one by one.
 
----
-
 ## How Bubble Sort Works
 - Start a **pass** over the array.
    - Compare the first pair.
@@ -13,10 +11,7 @@ It is called bubble sort because the largest numbers "bubble up" to the end of t
 - The last unsorted element is guaranteed to be in the correct place.
 - Repeat passes until no swaps are needed.
 
----
-
 ## Bubble Sort Pseudocode
-
 ```
 BUBBLE SORT(A)
  for i = 1 to A.length - 1
@@ -24,10 +19,10 @@ BUBBLE SORT(A)
          if A[j] < A[j-1]
              exchange A[j] with A[j-1]
 ```
----
 
 ## Complexity Analysis
 Bubble Sort performance depends on the input order, so for an array of length **n**:
+
 ### Worst Case
 For a reversed array like [5, 4, 3, 2, 1], bubble sort performs a swap on every comparison.
 
@@ -53,10 +48,9 @@ which simplifies to **O(n²) time complexity** when dropping constants and lower
 
 It also has **O(1) space complexity**, since it is in-place and only uses a few extra variables.
 
----
 ## Bubble Sort Implementations in TypeScript
-### Implementation 1: Using for-loops
 
+### Implementation 1: Using for-loops
 ```ts
 function bubbleSort(array: number[]): number[] {
   // Keep the classic `n` to represent the array size, useful for discussing time complexity.
@@ -73,6 +67,7 @@ function bubbleSort(array: number[]): number[] {
     return array;
 }
 ```
+
 ### Implementation 2: Using a while-loop
 ```ts
 function bubbleSort(array: number[]): number[] {
@@ -93,3 +88,5 @@ function bubbleSort(array: number[]): number[] {
   return array;
 }
 ```
+
+![Bubble sort](./images/bubble-sort.png)
