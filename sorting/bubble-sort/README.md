@@ -19,6 +19,8 @@ BUBBLE SORT(A)
          if A[j] < A[j-1]
              exchange A[j] with A[j-1]
 ```
+## Bubble Sort Visualization
+![Bubble sort](./images/bubble-sort.png)
 
 ## Complexity Analysis
 Bubble Sort performance depends on the input order, so for an array of length **n**:
@@ -88,5 +90,3 @@ function bubbleSort(array: number[]): number[] {
   return array;
 }
 ```
-
-![Bubble sort](./images/bubble-sort.png)
