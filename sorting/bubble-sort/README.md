@@ -6,7 +6,7 @@ It is called bubble sort because the largest numbers "bubble up" to the end of t
 ## How Bubble Sort Works
 - Start a **pass** over the array.
    - Compare the first pair.
-   - Swap them if the first one is bigger.
+   - **Swap** them if the first one is bigger.
    - Move to the next pair and continue to the end of the array.
 - The last unsorted element is guaranteed to be in the correct place.
 - Repeat passes until no swaps are needed.
@@ -29,12 +29,21 @@ Bubble Sort performance depends on the input order, so for an array of length **
 For a reversed array like [5, 4, 3, 2, 1], bubble sort performs a swap on every comparison.
 
 - Total comparisons: `1 + 2 + 3 + ... + (n-1) = n(n-1)/2`
+- Total swaps: `1 + 2 + 3 + ... + (n-1) = n(n-1)/2`
+- Total operations: `comparisons + swaps = n(n-1)`
+- Time Complexity: **O(n²)**
+
+### Average Case
+- Total comparisons: `n(n - 1)/2`
+- Total swaps: `≈ n(n - 1)/4`
+- Total operations: comparisons + swaps `≈ 3n(n-1)/4`
 - Time Complexity: **O(n²)**
 
 ### Best Case
 For an already sorted array like [1, 2, 3, 4, 5], bubble sort completes in a single pass with no swaps needed.
 
 - Total comparisons: `n - 1` 
+- Total swaps: `0`
 - Time Complexity: **O(n)**
 
 ### Space Complexity
